@@ -1,0 +1,50 @@
+{
+  "governmentSpending": {
+    "canton": {
+      "total": 18500000000,
+      "categories": [
+        { "name": "Education", "percentage": 28.5, "amount": 5272500000 },
+        { "name": "Social Welfare", "percentage": 24.3, "amount": 4495500000 },
+        { "name": "Healthcare", "percentage": 18.7, "amount": 3459500000 },
+        { "name": "Transportation", "percentage": 10.2, "amount": 1887000000 },
+        { "name": "Public Safety", "percentage": 7.8, "amount": 1443000000 },
+        { "name": "Administration", "percentage": 5.4, "amount": 999000000 },
+        { "name": "Environment", "percentage": 3.2, "amount": 592000000 },
+        { "name": "Other", "percentage": 1.9, "amount": 351500000 }
+      ]
+    },
+    "federal": {
+      "total": 80500000000,
+      "categories": [
+        { "name": "Social Welfare", "percentage": 34.9, "amount": 28094500000 },
+        { "name": "Finances & Taxes", "percentage": 15.8, "amount": 12719000000 },
+        { "name": "Transportation", "percentage": 12.7, "amount": 10223500000 },
+        { "name": "Education & Research", "percentage": 9.9, "amount": 7969500000 },
+        { "name": "Defense", "percentage": 7.1, "amount": 5715500000 },
+        { "name": "Agriculture", "percentage": 5.4, "amount": 4347000000 },
+        { "name": "Foreign Relations", "percentage": 4.8, "amount": 3864000000 },
+        { "name": "Other", "percentage": 9.4, "amount": 7567000000 }
+      ]
+    },
+    "personaBenefits": {
+      "anna": [
+        { "category": "Education", "benefit": "medium", "description": "Occasional professional development courses, potential future education for children" },
+        { "category": "Social Welfare", "benefit": "low", "description": "Safety net available but rarely needed, pension contributions" },
+        { "category": "Healthcare", "benefit": "medium", "description": "Regular healthcare services, subsidized health insurance" },
+        { "category": "Transportation", "benefit": "high", "description": "Daily use of public transportation, well-maintained roads" }
+      ],
+      "leo": [
+        { "category": "Education", "benefit": "low", "description": "Limited access to professional development, potential language courses" },
+        { "category": "Social Welfare", "benefit": "medium", "description": "Occasional unemployment benefits, housing assistance, pension contributions" },
+        { "category": "Healthcare", "benefit": "high", "description": "Regular healthcare services, significant health insurance subsidies" },
+        { "category": "Transportation", "benefit": "high", "description": "Heavy reliance on public transportation for commuting" }
+      ],
+      "millionaire": [
+        { "category": "Education", "benefit": "low", "description": "Private education options often preferred, limited direct benefits" },
+        { "category": "Social Welfare", "benefit": "very low", "description": "Safety net available but not needed, pension contributions" },
+        { "category": "Healthcare", "benefit": "low", "description": "Private healthcare options often preferred, no subsidies" },
+        { "category": "Transportation", "benefit": "medium", "description": "Occasional use of public transportation, well-maintained roads" }
+      ]
+    }
+  }
+}

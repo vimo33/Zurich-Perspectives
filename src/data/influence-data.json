@@ -1,0 +1,53 @@
+{
+  "wealthInfluence": {
+    "wealthDistribution": {
+      "switzerland": [
+        { "group": "Top 1%", "wealthShare": 43.0 },
+        { "group": "Next 9%", "wealthShare": 30.5 },
+        { "group": "Middle 40%", "wealthShare": 24.2 },
+        { "group": "Bottom 50%", "wealthShare": 2.3 }
+      ],
+      "cantonChanges": [
+        { "canton": "Zurich", "change": -5.2, "description": "Decrease in top 1% share over 50 years" },
+        { "canton": "Schwyz", "change": 12.8, "description": "Increase in top 1% share over 50 years" },
+        { "canton": "Zug", "change": 9.7, "description": "Increase in top 1% share over 50 years" }
+      ]
+    },
+    "politicalAccess": {
+      "anna": {
+        "directAccess": 2,
+        "indirectAccess": 4,
+        "description": "Limited direct access to politicians; some indirect access through professional associations and neighborhood groups"
+      },
+      "leo": {
+        "directAccess": 1,
+        "indirectAccess": 2,
+        "description": "Very limited direct access to politicians; minimal indirect access through unions or community organizations"
+      },
+      "millionaire": {
+        "directAccess": 8,
+        "indirectAccess": 9,
+        "description": "Significant direct access to politicians through business networks and exclusive events; strong indirect access through industry associations and lobbying groups"
+      }
+    },
+    "campaignFinancing": {
+      "transparency": "Limited transparency with significant loopholes in new 2021 rules",
+      "examples": [
+        { "donor": "Christoph Blocher (Billionaire)", "amount": 550000, "recipient": "Swiss People's Party (SVP)" },
+        { "donor": "Economiesuisse (Business Association)", "amount": 500000, "recipient": "Center-right campaigns" },
+        { "donor": "Swiss Banking Association", "amount": 500000, "recipient": "Multiple parties" }
+      ],
+      "zurichCampaigns": [
+        { "candidate": "Zurich National Council candidate (FDP)", "budget": 365000, "description": "One of the largest individual campaign budgets in 2023 federal elections" },
+        { "candidate": "Zurich National Council candidate (SVP)", "budget": 220000, "description": "Significant individual campaign budget in 2023 federal elections" }
+      ]
+    },
+    "lobbyingMechanisms": [
+      { "mechanism": "Industry Associations", "effectiveness": 9, "description": "Powerful business associations representing finance, insurance, and pharmaceutical sectors" },
+      { "mechanism": "Direct Politician Contact", "effectiveness": 8, "description": "Personal relationships with politicians through social and business networks" },
+      { "mechanism": "Media Influence", "effectiveness": 7, "description": "Ownership or influence over media outlets to shape public discourse" },
+      { "mechanism": "Expert Committees", "effectiveness": 8, "description": "Participation in expert committees that draft legislation and regulations" },
+      { "mechanism": "Public Campaigns", "effectiveness": 6, "description": "Funding public campaigns to influence referendum outcomes" }
+    ]
+  }
+}

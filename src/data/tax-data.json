@@ -1,0 +1,33 @@
+{
+  "taxRates": {
+    "federal": [
+      { "lowerBound": 0, "upperBound": 14500, "rate": 0 },
+      { "lowerBound": 14500, "upperBound": 31600, "rate": 0.77 },
+      { "lowerBound": 31600, "upperBound": 41400, "rate": 0.88 },
+      { "lowerBound": 41400, "upperBound": 55200, "rate": 2.64 },
+      { "lowerBound": 55200, "upperBound": 72500, "rate": 2.97 },
+      { "lowerBound": 72500, "upperBound": 78100, "rate": 3.30 },
+      { "lowerBound": 78100, "upperBound": 103600, "rate": 3.63 },
+      { "lowerBound": 103600, "upperBound": 134600, "rate": 4.0 },
+      { "lowerBound": 134600, "upperBound": 176000, "rate": 5.94 },
+      { "lowerBound": 176000, "upperBound": 755200, "rate": 6.60 },
+      { "lowerBound": 755200, "upperBound": Infinity, "rate": 11.50 }
+    ],
+    "cantonal": {
+      "baseRate": 98
+    },
+    "municipal": {
+      "Zurich City": 119,
+      "Schlieren": 111,
+      "Dietikon": 121,
+      "Küsnacht": 73
+    }
+  },
+  "deductions": {
+    "standard": 2600,
+    "professionalExpenses": 0.03,
+    "maxProfessionalExpenses": 4000,
+    "healthInsurance": 2600,
+    "thirdPillar": 7056
+  }
+}

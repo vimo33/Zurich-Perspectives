@@ -1,0 +1,57 @@
+{
+  "voterEngagement": {
+    "turnoutRates": {
+      "zurich": {
+        "nationalCouncil2023": 25.0,
+        "federalAverage": 46.7,
+        "byEducation": [
+          { "level": "Primary", "turnout": 30 },
+          { "level": "Secondary", "turnout": 45 },
+          { "level": "Tertiary", "turnout": 65 }
+        ],
+        "byIncome": [
+          { "group": "Low Income", "turnout": 35 },
+          { "group": "Middle Income", "turnout": 48 },
+          { "group": "High Income", "turnout": 70 }
+        ],
+        "byAge": [
+          { "group": "18-29", "turnout": 32 },
+          { "group": "30-49", "turnout": 45 },
+          { "group": "50-69", "turnout": 58 },
+          { "group": "70+", "turnout": 65 }
+        ]
+      }
+    },
+    "participationBarriers": {
+      "anna": [
+        { "barrier": "Time Constraints", "impact": 7, "description": "Work and family responsibilities limit time for political engagement" },
+        { "barrier": "Information Access", "impact": 4, "description": "Moderate access to political information through mainstream media" },
+        { "barrier": "Political Efficacy", "impact": 5, "description": "Some skepticism about ability to influence political outcomes" }
+      ],
+      "leo": [
+        { "barrier": "Time Constraints", "impact": 9, "description": "Multiple jobs and long working hours severely limit time for political engagement" },
+        { "barrier": "Information Access", "impact": 7, "description": "Limited access to comprehensive political information" },
+        { "barrier": "Political Efficacy", "impact": 8, "description": "Strong skepticism about ability to influence political outcomes" },
+        { "barrier": "Language Barriers", "impact": 6, "description": "Potential challenges with political materials in official languages" }
+      ],
+      "millionaire": [
+        { "barrier": "Time Constraints", "impact": 3, "description": "Greater control over work schedule allows time for political engagement" },
+        { "barrier": "Information Access", "impact": 1, "description": "Excellent access to political information through networks and exclusive sources" },
+        { "barrier": "Political Efficacy", "impact": 1, "description": "Strong confidence in ability to influence political outcomes" }
+      ]
+    },
+    "representationEffects": {
+      "policyAlignment": [
+        { "incomeGroup": "Low Income", "alignment": 35, "description": "Policies often do not align with preferences of low-income voters" },
+        { "incomeGroup": "Middle Income", "alignment": 55, "description": "Moderate alignment between policies and middle-income voter preferences" },
+        { "incomeGroup": "High Income", "alignment": 85, "description": "Strong alignment between policies and high-income voter preferences" }
+      ],
+      "keyFindings": [
+        "Higher-income voters have 2-3 times more influence on policy outcomes than lower-income voters",
+        "Education level is a stronger predictor of participation in referendums than in general elections",
+        "Differential turnout by socioeconomic status creates a 'participation gap' that skews democratic representation",
+        "Policy outcomes in Switzerland show stronger correlation with preferences of high-income voters"
+      ]
+    }
+  }
+}

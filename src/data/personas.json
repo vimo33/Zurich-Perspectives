@@ -1,0 +1,67 @@
+{
+  "personas": [
+    {
+      "id": "anna",
+      "name": "Anna",
+      "fullName": "Anna Weber",
+      "occupation": "Office Administrator",
+      "age": 35,
+      "location": "City of Zurich",
+      "income": 85000,
+      "assets": "Renting apartment, modest savings",
+      "taxMultiplier": 119,
+      "municipality": "Zurich City",
+      "shortBio": "Anna is a 35-year-old office administrator living in the city of Zurich. She earns CHF 85,000 annually and rents her apartment. She's educated and politically aware but often finds herself too busy to engage deeply with politics.",
+      "characteristics": [
+        "Educated with a bachelor's degree",
+        "Politically aware but time-constrained",
+        "Votes in most federal elections",
+        "Participates in some referendums",
+        "Middle-class lifestyle"
+      ],
+      "imagePath": "/images/anna.jpg"
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "fullName": "Leo Müller",
+      "occupation": "Hospitality Worker",
+      "age": 28,
+      "location": "Schlieren (suburb of Zurich)",
+      "income": 55000,
+      "assets": "Renting shared apartment, minimal savings",
+      "taxMultiplier": 111,
+      "municipality": "Schlieren",
+      "shortBio": "Leo is a 28-year-old hospitality worker living in Schlieren, a suburb of Zurich. He earns CHF 55,000 annually and shares a rented apartment. With less formal education and working multiple jobs, he has limited time for political engagement.",
+      "characteristics": [
+        "Vocational education",
+        "Works multiple jobs to make ends meet",
+        "Limited time for political engagement",
+        "Votes occasionally in major elections",
+        "Rarely participates in referendums"
+      ],
+      "imagePath": "/images/leo.jpg"
+    },
+    {
+      "id": "millionaire",
+      "name": "Zurich Millionaire",
+      "fullName": "Thomas Keller",
+      "occupation": "Finance Executive",
+      "age": 52,
+      "location": "Küsnacht (wealthy suburb)",
+      "income": 750000,
+      "assets": "Own property worth CHF 3.5 million, investment portfolio",
+      "taxMultiplier": 73,
+      "municipality": "Küsnacht",
+      "shortBio": "Thomas is a 52-year-old finance executive living in Küsnacht, an affluent suburb of Zurich. He earns CHF 750,000 annually, owns a CHF 3.5 million property, and has a substantial investment portfolio. He's highly educated, well-connected, and politically active.",
+      "characteristics": [
+        "Advanced degree from prestigious university",
+        "Well-connected in business and political circles",
+        "Regularly participates in elections and referendums",
+        "Donates to political campaigns",
+        "Attends exclusive networking events with politicians"
+      ],
+      "imagePath": "/images/millionaire.jpg"
+    }
+  ]
+}
