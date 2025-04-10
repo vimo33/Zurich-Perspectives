@@ -123,8 +123,9 @@ export default function InfluencePage() {
               <h2 className="text-2xl font-semibold text-[#457B9D] mb-4">
                 Campaign Financing
               </h2>
-              {influenceData.wealthInfluence.campaignFinancing?.examples
-                ?.length > 0 ? (
+              {influenceData.wealthInfluence.campaignFinancing?.examples &&
+              influenceData.wealthInfluence.campaignFinancing.examples.length >
+                0 ? (
                 <ul className="list-disc pl-5">
                   {influenceData.wealthInfluence.campaignFinancing.examples.map(
                     (example, index) => (
@@ -141,7 +142,7 @@ export default function InfluencePage() {
             </div>
 
             {/* Lobbying Mechanisms Section */}
-            <div>
+            <div className="mb-8">
               <h2 className="text-2xl font-semibold text-[#457B9D] mb-4">
                 Lobbying Mechanisms
               </h2>
