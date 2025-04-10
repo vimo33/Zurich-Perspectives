@@ -146,9 +146,10 @@ export default function InfluencePage() {
               <h2 className="text-2xl font-semibold text-[#457B9D] mb-4">
                 Lobbying Mechanisms
               </h2>
-              {influenceData.wealthInfluence.lobbyingMechanisms?.length > 0 ? (
+              {influenceData.wealthInfluence.lobbyingMechanisms?.length ??
+              0 > 0 ? (
                 <ul className="list-disc pl-5">
-                  {influenceData.wealthInfluence.lobbyingMechanisms.map(
+                  {influenceData.wealthInfluence.lobbyingMechanisms?.map(
                     (mechanism, index) => (
                       <li key={index} className="mb-2">
                         <strong>
