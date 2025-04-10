@@ -27,6 +27,9 @@ interface InfluenceData {
 
 export default function InfluencePage() {
   const params = useParams()
+  const persona = Array.isArray(params.persona)
+    ? params.persona[0]
+    : params.persona // Ensure persona is a string
   const [influenceData, setInfluenceData] = useState<InfluenceData | null>(null)
   const [loading, setLoading] = useState(true)
 
@@ -69,13 +72,13 @@ export default function InfluencePage() {
 
   return (
     <>
-      <Header persona={params.persona} />
+      <Header persona={persona || "unknown"} />
       <main className="min-h-screen bg-[#F1FAEE] text-[#333333]">
         <div className="container mx-auto px-4 py-12">
           {/* White Box Container */}
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h1 className="text-3xl font-bold text-[#1D3557] mb-6">
-              Political Influence for {params.persona}
+              Political Influence for {persona || "Unknown Persona"}
             </h1>
 
             {/* Wealth Distribution Section */}
@@ -106,12 +109,11 @@ export default function InfluencePage() {
               </h2>
               <p>
                 {influenceData.wealthInfluence.politicalAccess &&
-                typeof params.persona === "string" &&
-                influenceData.wealthInfluence.politicalAccess[params.persona]
+                persona &&
+                influenceData.wealthInfluence.politicalAccess[persona]
                   ?.description
-                  ? influenceData.wealthInfluence.politicalAccess[
-                      params.persona
-                    ].description
+                  ? influenceData.wealthInfluence.politicalAccess[persona]
+                      .description
                   : "No political access data available."}
               </p>
             </div>
