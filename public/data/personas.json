@@ -44,7 +44,7 @@
     },
     {
       "id": "millionaire",
-      "name": "Zurich Millionaire",
+      "name": "Thomas",
       "fullName": "Thomas Keller",
       "occupation": "Finance Executive",
       "age": 52,
@@ -61,7 +61,12 @@
         "Donates to political campaigns",
         "Attends exclusive networking events with politicians"
       ],
-      "imagePath": "/images/millionaire.jpg"
+      "imagePath": "/images/millionaire.jpg",
+      "link": {
+        "href": "/explore/millionaire",
+        "className": "block py-2 px-4 bg-[#457B9D] text-white text-center rounded hover:bg-[#5a8cad] transition-colors",
+        "text": "Compare with Thomas"
+      }
     }
   ]
 }

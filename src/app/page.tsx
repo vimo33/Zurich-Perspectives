@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -13,9 +12,9 @@ export default function Home() {
             Economy, Equity, and Influence
           </h2>
           <p className="max-w-3xl mx-auto text-lg mb-8">
-            Explore how Zurich residents with different incomes experience taxation, 
-            benefit from public spending, and navigate the political system. Choose a 
-            persona below to begin your journey.
+            Explore how Zurich residents with different incomes experience
+            taxation, benefit from public spending, and navigate the political
+            system. Choose a persona below to begin your journey.
           </p>
         </header>
 
@@ -30,11 +29,11 @@ export default function Home() {
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">Middle-Class Employee</h3>
               <p className="text-gray-700 mb-4">
-                Office administrator living in Zurich City, earning CHF 85,000 annually.
-                Educated and politically aware but time-constrained.
+                Office administrator living in Zurich City, earning CHF 85,000
+                annually. Educated and politically aware but time-constrained.
               </p>
-              <Link 
-                href="/explore/anna" 
+              <Link
+                href="/explore/anna"
                 className="block w-full py-2 px-4 bg-[#1D3557] text-white text-center rounded hover:bg-[#2a4a76] transition-colors"
               >
                 SELECT ANNA
@@ -50,13 +49,16 @@ export default function Home() {
               </div>
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">Lower-Income Service Worker</h3>
+              <h3 className="text-xl font-bold mb-2">
+                Lower-Income Service Worker
+              </h3>
               <p className="text-gray-700 mb-4">
-                Hospitality worker living in Schlieren, earning CHF 55,000 annually.
-                Works multiple jobs with limited time for political engagement.
+                Hospitality worker living in Schlieren, earning CHF 55,000
+                annually. Works multiple jobs with limited time for political
+                engagement.
               </p>
-              <Link 
-                href="/explore/leo" 
+              <Link
+                href="/explore/leo"
                 className="block w-full py-2 px-4 bg-[#1D3557] text-white text-center rounded hover:bg-[#2a4a76] transition-colors"
               >
                 SELECT LEO
@@ -74,11 +76,11 @@ export default function Home() {
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">Finance Executive</h3>
               <p className="text-gray-700 mb-4">
-                Finance executive living in Küsnacht, earning CHF 750,000 annually.
-                Well-connected, politically active and influential.
+                Finance executive living in Küsnacht, earning CHF 750,000
+                annually. Well-connected, politically active and influential.
               </p>
-              <Link 
-                href="/explore/millionaire" 
+              <Link
+                href="/explore/millionaire"
                 className="block w-full py-2 px-4 bg-[#1D3557] text-white text-center rounded hover:bg-[#2a4a76] transition-colors"
               >
                 SELECT THOMAS
@@ -88,19 +90,24 @@ export default function Home() {
         </div>
 
         <div className="mt-16 max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold text-[#1D3557] mb-4">About This Project</h3>
+          <h3 className="text-2xl font-semibold text-[#1D3557] mb-4">
+            About This Project
+          </h3>
           <p className="text-lg mb-4">
-            This interactive web pilot explores how economic inequality translates into political inequality
-            in Zurich, Switzerland. By following the experiences of three personas with different socioeconomic
-            backgrounds, you'll discover how taxation, public spending, political influence, and voter engagement
-            vary across income levels.
+            This interactive web pilot explores how economic inequality
+            translates into political inequality in Zurich, Switzerland. By
+            following the experiences of three personas with different
+            socioeconomic backgrounds, you&apos;ll discover how taxation, public
+            spending, political influence, and voter engagement vary across
+            income levels.
           </p>
           <p className="text-lg">
-            The data presented is based on research from official sources including the Federal Tax Administration,
-            Canton Zurich statistics, and academic studies on political participation and influence.
+            The data presented is based on research from official sources
+            including the Federal Tax Administration, Canton Zurich statistics,
+            and academic studies on political participation and influence.
           </p>
         </div>
       </div>
     </main>
-  );
+  )
 }
