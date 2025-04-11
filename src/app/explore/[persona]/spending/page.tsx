@@ -32,7 +32,9 @@ interface SpendingData {
 
 export default function SpendingPage() {
   const params = useParams()
-  const persona = params.persona || "unknown"
+  const persona = Array.isArray(params.persona)
+    ? params.persona[0]
+    : params.persona // Ensure persona is a string
 
   const [spendingData, setSpendingData] = useState<SpendingData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -131,11 +133,12 @@ export default function SpendingPage() {
                 Public Services Used by {persona}
               </h3>
               <ul>
-                {spendingData.governmentSpending.personaBenefits[persona] &&
-                spendingData.governmentSpending.personaBenefits[persona]!
+                {persona &&
+                spendingData.governmentSpending.personaBenefits &&
+                (spendingData.governmentSpending.personaBenefits[persona] ?? [])
                   .length > 0 ? (
                   spendingData.governmentSpending.personaBenefits[persona]!.map(
-                    (benefit, index) => (
+                    (benefit: PersonaBenefit, index: number) => (
                       <li key={index} className="mb-2">
                         <strong>{benefit.category}:</strong>{" "}
                         {benefit.description}
@@ -143,7 +146,7 @@ export default function SpendingPage() {
                     )
                   )
                 ) : (
-                  <p>No data available for {persona}.</p>
+                  <p>No data available for {persona || "this persona"}.</p>
                 )}
               </ul>
             </div>
