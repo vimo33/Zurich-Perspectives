@@ -34,7 +34,10 @@ interface TaxData {
 
 export default function TaxationPage() {
   const params = useParams()
-  const persona = params.persona || "unknown"
+  const persona = Array.isArray(params.persona)
+    ? params.persona[0]
+    : params.persona // Ensure persona is a string
+
   const [personaData, setPersonaData] = useState<Persona | null>(null)
   const [taxData, setTaxData] = useState<TaxData | null>(null)
   const [loading, setLoading] = useState(true)
@@ -53,7 +56,7 @@ export default function TaxationPage() {
         const personaResponse = await fetch("/data/personas.json")
         const personaData = await personaResponse.json()
         const foundPersona = personaData.personas.find(
-          (p: Persona) => p.id === params.persona
+          (p: Persona) => p.id === persona
         )
 
         if (foundPersona) {
@@ -72,7 +75,7 @@ export default function TaxationPage() {
     }
 
     loadData()
-  }, [params.persona])
+  }, [persona])
 
   const calculateTax = useCallback(() => {
     if (!personaData || !taxData) return
@@ -108,7 +111,6 @@ export default function TaxationPage() {
     }
 
     // Calculate cantonal tax (simplified as a percentage of federal tax)
-    // In reality, cantons have their own tax brackets, but for this demo we'll use a simplified approach
     const cantonalTax = federalTax * (taxData.taxRates.cantonal.baseRate / 100)
 
     // Calculate municipal tax
